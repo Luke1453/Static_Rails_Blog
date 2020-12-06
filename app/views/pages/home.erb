@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+</head>
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+</style>
+
+<body>
+  <div class="w3-main" style="margin-left:240px;margin-right:40px;margin-top:40px;margin-bottom: 40px;">
+
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>GPT3-Sandbox</b></h3>
+      </div>
+
+      <div class="w3-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+          placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue
+          ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+          fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <%= link_to('READ MORE »', '/post', {class: "w3-button w3-padding-large w3-white w3-border"}) %>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>GPT3-Sandbox</b></h3>
+      </div>
+
+      <div class="w3-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+          placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue
+          ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+          fringilla.</p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <%= link_to('READ MORE »', '/post', {class: "w3-button w3-padding-large w3-white w3-border"}) %>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>

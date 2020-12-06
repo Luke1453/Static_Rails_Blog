@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StaticAiBlog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+  </head>
+
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+  </style>
+    
+  <body>
+
+    <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Static GPT3 AI Blog</b></h3>
+      </div>
+      <div class="w3-bar-block">
+        <%= link_to('Home', '/', {class: 'w3-bar-item w3-button'}) %>
+        <%= link_to('Contact Developer', '/contact_page', {class: 'w3-bar-item w3-button'}) %>
+        <%= link_to('About', '/about_page', {class: 'w3-bar-item w3-button'}) %>
+        
+      </div>
+    </nav>
+
+    <div class="w3-container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

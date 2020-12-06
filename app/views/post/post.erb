@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+</head>
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+</style>
+
+<body>
+  <div class="w3-main" style="margin-left:240px;margin-right:40px">
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>GPT3-Sandbox</b></h3>
+        <h5>Post creation Date: <span class="w3-opacity"><%= @rand_date %></span></h5>
+      </div>
+
+      <div class="w3-container">
+       <%= simple_format(@rand_body) %>
+
+        <p><b>Comments  </b><span class="w3-badge"><%= @rand_int %></span></span></p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
